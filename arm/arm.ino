@@ -8,6 +8,9 @@
 #define arm_down  80
 Servo arm, grabber;
 int pos = 0;
+
+//version with comments deleted.
+
 void setup()
 {
   arm.attach(26);
@@ -31,25 +34,7 @@ void loop()
 
 
  void pick_clone_block(){
-   // Serial2.println("  ");
-     //   Serial2.println("Picking Clone Block");
-//        travelDirection2 = findTurnDirection(currentPosition,destination);
-//        turnTo(travelDirection2);
-//        //move_fwORbw_cm(0, 10);
-      //  Serial2.println("Turned");
-        //Serial2.println("moving forward");
-//        knobLeft.write(0);
-//         newFowLeft = knobLeft.read();                   
-//        FowDist = (newFowLeft/2248.66)*(8*pi);
-//        while (FowDist < 8){
-//          lineFollow();
-//          newFowLeft = knobLeft.read();                   
-//          FowDist = (newFowLeft/2248.66)*(8*pi);
-//          //Serial2.println(FowDist);
-//          }
-//          md.setBrakes(400,400);
-//        knobLeft.write(0);
-       // Serial2.println("done moving forward");
+
         delay(1000);
         grabber.write(grabber_release);
         delay(500);
@@ -62,17 +47,10 @@ void loop()
         //arm.write(arm_up);
         arm_down_to_up(0);
         delay(1000);
-      //  move_fwORbw_cm(1, 8);
-       // Serial2.println("Picked Clone Block");
-        //Serial2.println("  ");
+
     }
 void drop_clone_block(){
-    //Serial2.println("  ");
-      //  Serial2.println("Dropping Clone Block");
-//        turnTo(1);
-//        //move_fwORbw_cm(0, 6);
-//        delay(1000);
-        //arm.write(arm_down);
+
         arm_up_to_down(0);
         delay(500);
         //grabber.write(grabber_release);
@@ -87,25 +65,10 @@ void drop_clone_block(){
     }
 
 void pick_darth_vadar(){
-  //Serial2.println("  ");
-    //     Serial2.println("Picking Darth Vadar");
-//        travelDirection2 = findTurnDirection(37,36);
-//        turnTo(travelDirection2);
+
         grabber.write(grabber_release);
         delay(500);
-        //move_fwORbw_cm(0, 6);
-
-//        knobLeft.write(0);
-//         newFowLeft = knobLeft.read();                   
-//        FowDist = (newFowLeft/2248.66)*(8*pi);
-//        while (FowDist < 6){
-//          lineFollow();
-//          newFowLeft = knobLeft.read();                   
-//          FowDist = (newFowLeft/2248.66)*(8*pi);
-//          }
-//          md.setBrakes(400,400);
-//        knobLeft.write(0);
-//        
+   
         delay(500);
         grabber.write(grabber_release);
         arm.write(arm_half);
@@ -122,24 +85,8 @@ void pick_darth_vadar(){
         //Serial2.println("  ");
   }
 void drop_darth_vadar(){
-  //Serial2.println("  ");
-    //   Serial2.println("Dropping Darth Vadar");
-//       travelDirection2 = findTurnDirection(currentPosition,destination);
-//        turnTo(travelDirection2);
-//        delay(500);
-//        //move_fwORbw_cm(0, 6);
-//
-//        knobLeft.write(0);
-//         newFowLeft = knobLeft.read();                   
-//        FowDist = (newFowLeft/2248.66)*(8*pi);
-//        while (FowDist < 6){
-//          lineFollow();
-//          newFowLeft = knobLeft.read();                   
-//          FowDist = (newFowLeft/2248.66)*(8*pi);
-//          }
-//          md.setBrakes(400,400);
-//        knobLeft.write(0);
-//        
+ 
+      
         delay(500);
         
         //arm.write(arm_half);

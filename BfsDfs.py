@@ -26,7 +26,8 @@ def iterative_bfs(graph, start, path=[]):
       q=q+graph[v]
   return path
 
-'''
+''''
+example graph
    +---- A
    |   /   \
    |  B--D--C
