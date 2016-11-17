@@ -5,8 +5,9 @@ second edit to first branch. before pull request
 ..
 part of first line removed. check if red in compare.
 desktop edits
-1. a part of the first line was reduced
+1. a part of the first line was redu
 2. this line was added
 pull request change
 pull request change w/ new file...
 save as.md
+new change test 1
